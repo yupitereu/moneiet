@@ -1,0 +1,34 @@
+{
+  "name": "moneiet-client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 4000 --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ignore-pattern .next"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write --config ../../.prettierrc",
+      "eslint . --ignore-pattern .next --fix"
+    ],
+    "*.{scss,css}": [
+      "stylelint --fix"
+    ]
+  },
+  "dependencies": {
+    "axios": "1.7.8",
+    "next": "15.0.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@repo/project-config": "workspace:*",
+    "@repo/ui": "workspace:*",
+    "@svgr/webpack": "8.1.0",
+    "@types/node": "20.17.8",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1"
+  }
+}

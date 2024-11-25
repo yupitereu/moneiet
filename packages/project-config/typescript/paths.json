@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["apps/client/*", "apps/server/*", "packages/ui/*"],
+      "@client/*": ["apps/client/*"],
+      "@server/*": ["apps/server/*"],
+      "@ui/*": ["packages/ui/*"]
+    }
+  }
+}
