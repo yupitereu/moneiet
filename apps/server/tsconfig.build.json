@@ -1,0 +1,13 @@
+{
+  "extends": "@repo/project-config/typescript/apps.json",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": false,
+    "outDir": "./dist",
+    "removeComments": true,
+    "strictBindCallApply": false,
+  },
+  "include": ["**/*.ts", "**/*.tsx",],
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
+}
