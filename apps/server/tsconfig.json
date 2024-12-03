@@ -1,12 +1,16 @@
 {
   "extends": "@repo/project-config/typescript/apps.json",
   "compilerOptions": {
+    "baseUrl": ".",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "outDir": "./dist",
     "removeComments": true,
     "strictBindCallApply": false,
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "include": [
     "**/*.ts",
@@ -15,6 +19,5 @@
   "exclude": [
     "node_modules",
     "dist",
-    ".vercel"
   ]
 }
