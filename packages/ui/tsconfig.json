@@ -2,11 +2,10 @@
   "extends": "@repo/project-config/typescript/react-library.json",
   "compilerOptions": {
     "baseUrl": ".",
-    "plugins": [{ "name": "next" }],
     "paths": {
-      "@/*": ["./*"]
+      "@ui/*": ["./*"]
     },
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["."],
   "exclude": ["node_modules", "dist"]
 }

@@ -1,19 +1,26 @@
 {
   "extends": "@repo/project-config/typescript/apps.json",
   "compilerOptions": {
-    "plugins": [{"name": "next"}],
-    "noEmit": true,
-    "jsx": "preserve"
+    "baseUrl": "../../",
+    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "apps/client/*"
+      ],
+      "@ui/*": [
+        "packages/ui/*"
+      ]
+    },
+    "module": "esnext",
+    "strictNullChecks": true
   },
-  "include": [
-    "next-env.d.ts",
-    "next.config.js",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    ".next"
-  ]
+  "include": ["next-env.d.ts", "next.config.mjs", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", ".next"]
 }

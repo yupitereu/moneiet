@@ -14,7 +14,7 @@ const nextConfig = {
     return [
       {
         source: '/nest-api/:path*',
-        destination: `${process.env.NEXT_PUBILC_API_SERVER}/:path*`
+        destination: `/api/:path*`
       }
     ];
   },

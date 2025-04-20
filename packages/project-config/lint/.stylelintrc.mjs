@@ -18,5 +18,6 @@ export default {
     'keyframes-name-pattern': '^[a-z][a-z0-9-_]*$',
     'no-invalid-double-slash-comments': null,
     'block-no-empty': null,
+    'import-notation': 'notation'
   }
 };
