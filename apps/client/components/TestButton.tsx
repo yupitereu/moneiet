@@ -1,17 +1,17 @@
 'use client';
-import { DefaultButton } from '@repo/ui';
-import axios from 'axios';
+import { Button } from '@repo/ui';
+
+import { apiClient } from '@/lib/clients/apiClient';
 
 export const TestButton = () => {
-  const handleClick = () => {
-    axios.get('/nest-api/hello').then((res) => {
-      console.log(res.data);
-    });
+  const handleClick = async () => {
+    const res = await apiClient.get('/users');
+    console.log(res.data);
   };
 
   return (
-    <DefaultButton variant="default" size="lg" onClick={handleClick}>
+    <Button variant="default" size="lg" className={''} onClick={handleClick}>
       Click me!
-    </DefaultButton>
+    </Button>
   );
 };

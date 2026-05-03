@@ -2,19 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/main.ts",
+      "src": "api/index.ts",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/main.ts",
+      "dest": "/api/index.ts",
       "methods": [
         "GET",
+        "HEAD",
         "POST",
         "PUT",
-        "DELETE"
+        "DELETE",
+        "PATCH",
+        "OPTIONS"
       ]
     }
   ]

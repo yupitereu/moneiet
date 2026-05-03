@@ -8,22 +8,22 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md}\""
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.1.4",
-    "eslint": "9.15.0",
+    "@tailwindcss/postcss": "4.2.4",
+    "eslint": "9.39.4",
     "husky": "9.1.7",
-    "lint-staged": "15.2.10",
-    "postcss": "8.4.49",
-    "prettier": "3.3.3",
-    "stylelint": "16.10.0",
-    "stylelint-config-standard": "36.0.1",
-    "stylelint-order": "6.0.4",
-    "stylelint-scss": "6.9.0",
-    "tailwindcss": "4.1.4",
-    "turbo": "2.3.1",
-    "typescript": "5.6.3"
+    "lint-staged": "16.4.0",
+    "postcss": "8.5.13",
+    "prettier": "3.8.3",
+    "stylelint": "17.9.1",
+    "stylelint-config-standard": "40.0.0",
+    "stylelint-order": "8.1.1",
+    "stylelint-scss": "7.0.0",
+    "tailwindcss": "4.2.4",
+    "turbo": "2.9.8",
+    "typescript": "6.0.3"
   },
-  "packageManager": "pnpm@9.14.2",
+  "packageManager": "pnpm@10.33.2+sha512.a90faf6feeab71ad6c6e57f94e0fe1a12f5dcc22cd754db40ae9593eb6a3e0b6b12e3540218bb37ae083404b1f2ce6db2a4121e979829b4aff94b99f49da1cf8",
   "engines": {
-    "node": "22.14.0"
+    "node": "24.14.1"
   }
 }
